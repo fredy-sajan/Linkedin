@@ -1,0 +1,278 @@
+/* 
+   !..NOTE..!
+   In the header section First I completed  the PC design and I used to media queries to achieve mobile responsiveness
+*/
+
+/* Color's */
+:root {
+    --header-white: #FFFFFF;
+    --search-box-light-blue: #EEF3F8;
+    --unactive: #737373;
+    --active: black;
+}
+
+/* Header */
+/* ----- */
+.header-class {
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    background-color: var(--header-white);
+    display: flex;
+    justify-content: center;
+}
+
+.header-class .header-contents {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side of Header */
+/* ------------------ */
+
+.header-class .header-contents .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-class .header-contents .left-side .logo {
+    margin-top: 4px;
+}
+
+.header-class .header-contents .left-side .search-box {
+    display: flex;
+    width: 100%;
+}
+
+.header-class .header-contents .left-side .search-box .icon {
+    width: 34px;
+    height: 37px;
+    border-radius: 7px 0 0 7px;
+    padding: 0 12px 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--search-box-light-blue);
+    cursor: pointer;
+}
+
+.header-class .header-contents .left-side .search-box .input-area input {
+    max-width: 250px;
+    width: 100%;
+    height: 37px;
+    border-radius: 0 7px 7px 0;
+    padding: 0 0 0 4px;
+    outline: none;
+    border: none;
+    background-color: var(--search-box-light-blue);
+}
+
+
+
+
+/* Right side of Header */
+/* ------------------- */
+
+.header-class .header-contents .right-side {
+    height: 100%;
+}
+
+.header-class .header-contents .right-side .right-side-ul {
+    display: flex;
+}
+
+.header-class .header-contents .right-side .right-side-ul li {
+    height: 100%;
+    margin: 1px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-class .header-contents .right-side .right-side-ul li i {
+    font-size: 119%;
+    margin-top: -5px;
+    color: var(--unactive);
+}
+
+.header-class .header-contents .right-side .right-side-ul li.active i {
+    color: var(--active);
+}
+
+
+.header-class .header-contents .right-side .right-side-ul li p {
+    font-size: 13px;
+    margin-top: 3px;
+    color: var(--unactive);
+}
+
+.header-class .header-contents .right-side .right-side-ul li p.active {
+    color: var(--active);
+}
+
+
+.header-class .header-contents .right-side .right-side-ul #profile-menu {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: thin solid rgb(206, 202, 202);
+}
+
+.header-class .header-contents .right-side .right-side-ul li img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -7px;
+}
+
+.header-class .header-contents .right-side .right-side-ul #profile-menu span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.header-class .header-contents .right-side .right-side-ul #profile-menu span i {
+    font-size: 11px;
+    margin: 0 0 0 2px;
+}
+
+.header-class .header-contents .right-side .right-side-ul #business-icon span {
+    display: flex;
+}
+
+.header-class .header-contents .right-side .right-side-ul #business-icon span i {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+
+/* -------------- */
+/* Media queries */
+/* -------------- */
+
+/* Tablet screens */
+@media (min-width: 701px) and (max-width: 999px) {
+
+    .header-class .header-contents .right-side .right-side-ul #profile-menu {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        margin-top: 12px;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul #profile-menu span i {
+        display: none;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul #business-icon,
+    #post-job-icon {
+        display: none;
+    }
+}
+
+/* For Mobile's */
+@media screen and (max-width: 700px) {
+
+    .header-class .header-contents {
+        padding: 0 15px 0 15px;
+    }
+
+    /* Left side of Header */
+    .header-class .header-contents .left-side .search-box .icon.hide {
+        background-color: white;
+        ;
+    }
+
+    .header-class .header-contents .left-side .search-box .icon.display {
+        width: 60px;
+        background-color: var(--search-box-light-blue);
+    }
+
+    .header-class .header-contents .left-side .search-box .icon.display i {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .header-class .header-contents .left-side .search-box .icon i {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .header-class .header-contents .left-side .search-box .input-area.search-unactive {
+        display: none;
+    }
+
+    .header-class .header-contents .left-side .search-box .input-area.search-active {
+        display: block;
+    }
+
+    .header-class .header-contents .left-side .search-box .input-area input {
+        max-width: none;
+        width: 100%;
+    }
+
+
+    /* Right side of Header */
+
+    .header-class .header-contents .right-side .right-side-ul {
+        margin-top: 13px;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul li i {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul li p {
+        display: none;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul #profile-menu {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul li img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul #profile-menu span i {
+        display: none;
+    }
+
+    .header-class .header-contents .right-side .right-side-ul #network-icon,
+    #jobs-icon,
+    #business-icon,
+    #post-job-icon {
+        display: none;
+    }
+
+    /* when the search area active the right side elements will be hidden. after it's inactive it will be displayed */
+    .right-side-hide {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    /* Right side of header  */
+    .header-class .header-contents .right-side .right-side-ul #messaging-icon,
+    #notifications-icon {
+        display: none;
+    }
+}
