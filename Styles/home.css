@@ -1,0 +1,842 @@
+/* root colors */
+:root {
+    --body-background: #F3F2EF;
+    --text-light: #535252;
+    --border-line: rgb(218, 215, 215);
+    --content-background: rgb(255, 255, 255);
+    --text-blue: #0f5db1;
+    --hover-grey: lightgrey;
+}
+
+.home-body {
+    width: 100%;
+    height: auto;
+    background-color: var(--body-background);
+    padding: 90px 0 0;
+}
+
+#home {
+    max-width: 1300px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+/* --------------------------- */
+/* Left section of home Start */
+/* ------------------------- */
+/* aside left */
+
+#home #left-side-home {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Profile information section */
+#home #left-side-home #profile-info {
+    background-color: var(--content-background);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cover image section */
+#home #left-side-home #profile-info .cover-image img {
+    width: 100%;
+    height: 56px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+/* Profile picture section */
+#home #left-side-home #profile-info .profile-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+#home #left-side-home #profile-info .profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+
+/* Name & bio  section */
+#home #left-side-home #profile-info .text-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+#home #left-side-home #profile-info .text-info .name {
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#home #left-side-home #profile-info .text-info .name:hover {
+    text-decoration: underline;
+}
+
+#home #left-side-home #profile-info .text-info .bio {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 7px;
+    max-width: 190px;
+}
+
+
+/* Analytics  section */
+#home #left-side-home #profile-info .analytics-info {
+    padding: 15px 10px;
+    border-top: 1px solid var(--border-line);
+    border-bottom: 1px solid var(--border-line);
+    margin-top: 19px;
+    cursor: pointer;
+}
+
+#home #left-side-home #profile-info .analytics-info:hover {
+    background-color: var(--hover-grey);
+}
+
+#home #left-side-home #profile-info .analytics-info .head-text {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#home #left-side-home #profile-info .analytics-info .impressions {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+
+/* Premium notification section */
+#home #left-side-home #profile-info .subscription-info {
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--border-line);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    cursor: pointer;
+}
+
+#home #left-side-home #profile-info .subscription-info:hover {
+    background-color: var(--hover-grey);
+}
+
+#home #left-side-home #profile-info .subscription-info .text-info {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+
+#home #left-side-home #profile-info .subscription-info .premium-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#home #left-side-home #profile-info .subscription-info .premium-info .premium-text {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#home #left-side-home #profile-info .subscription-info:hover .premium-info .premium-text {
+    color: var(--text-blue);
+}
+
+#home #left-side-home #profile-info .subscription-info .premium-info .premium-box {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    margin: 9px 4px 0 0;
+    border-radius: 2px;
+}
+
+/* My items section*/
+#home #left-side-home #profile-info .my-items {
+    padding: 15px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    cursor: pointer;
+}
+
+#home #left-side-home #profile-info .my-items:hover {
+    background-color: var(--hover-grey);
+}
+
+#home #left-side-home #profile-info .my-items i {
+    margin-right: 12px;
+    font-size: 15px;
+    color: #575757;
+}
+
+#home #left-side-home #profile-info .my-items .items-text {
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/* Other info section */
+#home #left-side-home #other-info {
+    background-color: var(--content-background);
+    margin-top: 14px;
+    padding: 15px 0;
+    border-radius: 10px;
+    position: sticky;
+    top: 90px;
+}
+
+#home #left-side-home #other-info ul {
+    list-style: none;
+}
+
+#home #left-side-home #other-info ul>li:not(:first-child) {
+    margin-top: 15px;
+}
+
+#home #left-side-home #other-info ul li {
+    font-weight: bolder;
+    color: var(--text-blue);
+    padding: 0 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#home #left-side-home #other-info ul li:hover {
+    text-decoration: underline;
+}
+
+#home #left-side-home #other-info .discover-info {
+    margin-top: 14px;
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 1px solid var(--border-line);
+    cursor: pointer;
+}
+
+#home #left-side-home #other-info .discover-info:hover .discover-text {
+    color: var(--text-blue);
+}
+
+#home #left-side-home #other-info .discover-text {
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--text-light);
+
+}
+
+
+/* ------------------------- */
+/* Left section of home End */
+/* ------------------------- */
+
+
+
+/* --------------------------- */
+/* Main section of home Start */
+/* --------------------------- */
+
+/* #main-body-home {
+    background-color: wheat;
+} */
+
+/* Job information section */
+#main-body-home #job-info {
+    height: auto;
+    padding: 30px 20px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#main-body-home #job-info #exit-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 22px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+#main-body-home #job-info img {
+    width: 156px;
+    height: 156px;
+}
+
+#main-body-home #job-info .job-text-head {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#main-body-home #job-info .job-text-second {
+    font-size: 17px;
+    margin-top: 7px;
+    color: var(--text-light);
+}
+
+#main-body-home #job-info .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#main-body-home #job-info .buttons #yes-button {
+    width: 49%;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid var(--text-blue);
+    color: var(--text-blue);
+    border-radius: 20px;
+    padding: 4px 2px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+#main-body-home #job-info .buttons #no-button {
+    width: 49%;
+    background-color: white;
+    border: 1px solid var(--text-blue);
+    color: var(--text-blue);
+    border-radius: 20px;
+    padding: 4px 2px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/* Start a post section */
+#main-body-home #start-post {
+    background-color: var(--content-background);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#main-body-home #start-post .post-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#main-body-home #start-post .post-area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#main-body-home #start-post .post-area .post-button {
+    width: 100%;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #fff;
+    border: 1px solid var(--text-light);
+    border-radius: 30px;
+    text-align: start;
+    padding-left: 20px;
+    font-weight: bolder;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+#main-body-home #start-post .other-post-opt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#main-body-home #start-post .other-post-opt .photo-upload,
+.video-upload,
+.event-upload,
+.article-upload {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#main-body-home #start-post .other-post-opt .photo-upload:hover,
+.video-upload:hover,
+.event-upload:hover,
+.article-upload:hover {
+    background-color: lightgrey;
+}
+
+#main-body-home #start-post .other-post-opt i {
+    margin-right: 7px;
+    font-size: 17px;
+}
+
+#main-body-home #start-post .other-post-opt .photo-upload i {
+    color: var(--text-blue);
+
+}
+
+#main-body-home #start-post .other-post-opt .video-upload i {
+    color: green;
+}
+
+#main-body-home #start-post .other-post-opt .event-upload i {
+    color: rgb(207, 135, 0);
+}
+
+#main-body-home #start-post .other-post-opt .article-upload i {
+    color: rgb(185, 65, 28);
+}
+
+#main-body-home #start-post .other-post-opt p {
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--text-light);
+}
+
+
+
+/* Users Post start */
+#main-body-home #users-posts {
+    margin-bottom: 15px;
+}
+
+#main-body-home #users-posts #post-card {
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    padding: 0 0 2px 0;
+    margin-bottom: 15px;
+}
+
+/* user info html div section inside post card */
+#main-body-home #users-posts #post-card .user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 15px;
+}
+
+#main-body-home #users-posts #post-card .user-info .user-logo {
+    margin-right: 10px;
+}
+
+#main-body-home #users-posts #post-card .user-info .user-logo img {
+    width: 55px;
+    height: 55px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* user details html div section inside post card */
+#main-body-home #users-posts #post-card .user-info .user-details .username h2 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#main-body-home #users-posts #post-card .user-info .user-details .followers-count p {
+    font-size: 14px;
+    color: var(--text-light);
+    padding: 3px 0;
+}
+
+#main-body-home #users-posts #post-card .user-info .user-details .post-date p {
+    font-size: 13px;
+    color: var(--text-light);
+
+}
+
+/* description html div section inside post card */
+#main-body-home #users-posts #post-card .description {
+    padding: 0 15px 15px;
+}
+
+#main-body-home #users-posts #post-card .description p {
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+/* reaction info html div section inside post card */
+#main-body-home #users-posts #post-card .reaction-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 8px 0 6px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid var(--border-line);
+}
+
+#main-body-home #users-posts #post-card .reaction-info .right-side .likes-got p {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+#main-body-home #users-posts #post-card .reaction-info .left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#main-body-home #users-posts #post-card .reaction-info .left-side .comments p {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-right: 8px;
+}
+
+#main-body-home #users-posts #post-card .reaction-info .left-side .reposts {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* reaction secton that the section have the option: like,comment and more.. */
+#main-body-home #users-posts #post-card .reaction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 7px 0;
+}
+
+#main-body-home #users-posts #post-card .reaction i {
+    margin-right: 5px;
+}
+
+#main-body-home #users-posts #post-card .reaction p {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#main-body-home #users-posts #post-card .reaction .like,
+.comment,
+.repost,
+.send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--text-light);
+    font-size: 19px;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main-body-home #users-posts #post-card .reaction .like:hover,
+.comment:hover,
+.repost:hover,
+.send:hover {
+    background-color: lightgray;
+}
+
+/* --------------------------- */
+/* Main section of home End */
+/* --------------------------- */
+
+
+
+/* ---------------------------- */
+/* Right section of home Start */
+/* -------------------------- */
+#home #right-side-home {
+    display: none;
+}
+
+/* linkedin news section */
+#home #right-side-home .linkeding-news {
+    background-color: var(--content-background);
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+#home #right-side-home .linkeding-news h2 {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#home #right-side-home .linkeding-news .top-news-list {
+    padding: 15px 0 15px 16px;
+}
+
+#home #right-side-home .linkeding-news .top-news-list .news {
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#home #right-side-home .linkeding-news .top-news-list .news:hover {
+    color: var(--text-blue);
+}
+
+#home #right-side-home .linkeding-news .top-news-list .news:not(:first-child) {
+    margin-top: 13px;
+}
+
+#home #right-side-home .linkeding-news .top-news-list .news-info {
+    list-style: none;
+}
+
+#home #right-side-home .linkeding-news .top-news-list .news-info li {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+#home #right-side-home .linkeding-news .show-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#home #right-side-home .linkeding-news .show-more:hover h3 {
+    color: var(--text-blue);
+}
+
+#home #right-side-home .linkeding-news .show-more h3 {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-right: 7px;
+}
+
+#home #right-side-home .linkeding-news .show-more i {
+    margin-top: 3px;
+    color: var(--text-light);
+}
+
+/* Linkedin premium offer section*/
+#home #right-side-home .linkedin-premium {
+    background-color: var(--content-background);
+    margin-top: 15px;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: sticky;
+    top: 90px;
+}
+
+#home #right-side-home .linkedin-premium .text-one {
+    font-size: 14px;
+    padding: 0 0 10px 0;
+    color: var(--text-light);
+    text-align: center;
+}
+
+#home #right-side-home .linkedin-premium .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0;
+}
+
+#home #right-side-home .linkedin-premium .images .user-profile-pic img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#home #right-side-home .linkedin-premium .images .linkedin-premium-pic img {
+    width: 70px;
+    height: 70px;
+}
+
+#home #right-side-home .linkedin-premium .text-two {
+    text-align: center;
+    font-size: 17px;
+    color: var(--text-light);
+    margin: 0 0 15px 0;
+}
+
+#home #right-side-home .linkedin-premium .try-button {
+    background-color: white;
+    border: 1px solid var(--text-blue);
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: bolder;
+    color: var(--text-blue);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* footer section */
+#home #right-side-home #footer {
+    margin-top: 15px;
+    padding: 15px;
+    position: sticky;
+    top: 370px;
+}
+
+#home #right-side-home #footer .links {
+    max-width: 200px;
+    margin: auto;
+}
+
+#home #right-side-home #footer .links ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#home #right-side-home #footer .links ul li {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+#home #right-side-home #footer .links ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--text-blue);
+}
+
+#home #right-side-home #footer .links ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+#home #right-side-home #footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#home #right-side-home #footer .copyright .text-one {
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--text-blue);
+    margin: 5px 0 0 0;
+}
+
+#home #right-side-home #footer .copyright .text-two {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+
+/* Media Quries */
+/* ----------- */
+
+/* When the screen size between 701px to 999px the home grid have Twio columns */
+@media (min-width: 701px) and (max-width: 999px) {
+
+    #home {
+        -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+/* Whe the screen size > 1000px the right side element in home will be displayed otherwise it will be hidden */
+@media screen and (min-width: 1000px) {
+
+    #home {
+        -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    #home #right-side-home {
+        display: block;
+    }
+}
